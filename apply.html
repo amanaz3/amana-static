@@ -800,7 +800,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nextBtn.disabled = true;
     nextBtn.innerHTML = 'Submitting... <span>⏳</span>';
 
-    fetch(APP_URL + '/bank-application/submit', {
+    fetch('https://amana-forms.quraish.workers.dev/bank-application/submit', {
       method: 'POST',
       headers: {
         'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,

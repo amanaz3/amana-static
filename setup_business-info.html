@@ -781,7 +781,7 @@ form.addEventListener('submit', function(e) {
 
   const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
-  fetch(APP_URL + '/submit-business-form', {
+  fetch('https://amana-forms.quraish.workers.dev/submit-business-form', {
     method: 'POST',
     headers: {
       'X-CSRF-TOKEN': csrfToken,
@@ -797,7 +797,7 @@ form.addEventListener('submit', function(e) {
   .then(data => {
     if (data.success) {
       if (typeof grecaptcha !== "undefined") grecaptcha.reset();
-      window.location.href = APP_URL + '/thank-you';
+      window.location.href = 'thank-you.html';
       form.reset();
 
       currentStep = 1;
