@@ -147,6 +147,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     padding: 4px 16px;
     margin: 0 8px 16px 8px;
     }
+    .partners-section{
+        padding: 72px 0;
+        background: #f7f9fc;
+    }
+    .partners-section .section-tag{
+        display:block;
+        text-align:center;
+        text-transform:uppercase;
+        letter-spacing:.08em;
+        font-size:13px;
+        font-weight:700;
+        color:#1973f0;
+        margin-bottom:10px;
+    }
+    .partners-section h2{
+        text-align:center;
+        font-weight:800;
+        font-size:2.25rem;
+        margin-bottom:12px;
+    }
+    .partners-section p.partners-sub{
+        text-align:center;
+        color:#6c7a92;
+        max-width:640px;
+        margin:0 auto 40px auto;
+        font-size:1.05rem;
+    }
+    .partners-grid{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    @media (max-width: 991px){
+        .partners-grid{ grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 575px){
+        .partners-grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+    .partner-card{
+        background:#fff;
+        border-radius:14px;
+        border:1px solid #eef1f6;
+        box-shadow: 0 2px 10px rgba(20,30,60,0.04);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:22px 18px;
+        height:110px;
+    }
+    .partner-card img{
+        max-width:100%;
+        max-height:56px;
+        object-fit:contain;
+        filter:grayscale(15%);
+    }
 </style>
 <section class="home-page-modal m-0 p-0">
 <!-- Launch Business Modal -->
@@ -266,7 +321,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <!-- ======================= Hero END -->
 
-
+<!-- Our Partners Section -->
+<section class="partners-section">
+    <div class="container">
+        <span class="section-tag">Trusted by leading organizations</span>
+        <h2>Our Partners</h2>
+        <p class="partners-sub">Collaborating with the UAE's leading free zones, government entities, and technology partners.</p>
+        <div class="partners-grid">
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/duqe_new.jpg" alt="DUQE"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/shams_black_text.png" alt="Shams Dubai"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/Ajman_new.png" alt="Ajman Free Zone"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/Meydan_new.png" alt="Meydan"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/ZOHO_new.png" alt="Zoho"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/Dubai_Investments.png" alt="Dubai Investments"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/Innovation_City.png" alt="Innovation City"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/ANC.png" alt="ANC Free Zone"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/Rakez.png" alt="RAKEZ"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/rakicc_new.png" alt="RAK ICC"></div>
+            <div class="partner-card"><img src="https://www.amanacorporate.ae/partners/IFZA_new.png" alt="IFZA"></div>
+        </div>
+    </div>
+</section>
+<!-- Our Partners Section END -->
 
 <section class="countries-section">
     <div class="container">
